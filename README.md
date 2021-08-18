@@ -19,22 +19,25 @@ cd ~/catkin_ws && catkin_make
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch 
 ```
-- pic
 -
+ ![turtle1-1](https://user-images.githubusercontent.com/85634146/129965272-74c62fe7-a36b-408c-9a24-79596cad0879.png)
+ 
 - Sixth step: open a new terminal from file. Control the robot movement by typing this code:
 ```
 export TURTLEBOT3_MODEL=burger
 
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
-- pic
+-
+- ![Turtle 2](https://user-images.githubusercontent.com/85634146/129964208-2327f185-1e57-400f-9d36-21d8d7100a4c.jpeg)
+
 - Seventh step: Launch the SLAM Node: in a new terminal tal. run this code:
 ```
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping 
 ```
-- pic
-- Eighth step: save the map:<br/>
+- 
+![turtle3](https://user-images.githubusercontent.com/85634146/129965121-6569f637-2aac-4499-a8a0-00d866cd26a9.jpeg)
+
+-  Final  step: save the map:<br/>
 <br/> `rosrun map_server map_saver -f ~/map`
-- pic
-- pic
